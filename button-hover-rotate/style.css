@@ -1,0 +1,40 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    color: #272727;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 12px;
+    padding: 40px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: coral;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+
+}
+
+a:hover:before{
+    transform: rotate(0deg);
+
+}
